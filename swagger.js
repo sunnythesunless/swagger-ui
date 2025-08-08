@@ -8,6 +8,13 @@ const options = {
       version: '1.0.0',
       description: 'A simple Express.js API with Swagger documentation',
     },
+    securityDefinitions: {
+      apiKey: {
+        type: 'apiKey',
+        name: 'x-api-key',
+        in: 'header',
+      },
+    },
     servers: [
       { url: 'http://localhost:3000', description: 'Development server' },
     ],
